@@ -1,25 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import WeeklySongListItem from './components/WeeklySongListItem';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <WeeklySongListItem
+          order="01"
+          title="Anh Đang Ở Đâu Đấy Anh"
+          singer="Hương Giang"
+          viewCount={3416}
+        />
       </div>
     );
   }
